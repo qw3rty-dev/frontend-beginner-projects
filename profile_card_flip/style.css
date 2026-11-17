@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #94a3b8;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(body_bg.png);
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container{
+    perspective: 1000px;
+    width: min(90%,250px);
+}
+
+#flip:checked ~.card{
+    transform: rotateY(180deg);
+}
+.card{
+    position: relative;
+    border: 4px solid #677187;
+    border-radius: 22px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    box-shadow: -5px -3px 1px #272729;
+    min-height: 300px;
+}
+.card-banner{
+    height: 90px;
+    background-image: url(background.png);
+    background-size: cover;
+    border-radius: 20px 20px 0 0 ;
+    
+}
+.back-side {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    
+}
+.back-side,.front-side{
+    border-radius: 20px;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+       
+}
+#flip {
+    display: none;
+}
+
+.profile-img{
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -60px;
+    border: 4px solid #67ade7;
+    outline: 4px solid #303646;
+    box-shadow: 2px 2px 10px #3988e3;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.profile-img:hover{
+    box-shadow: 2px 2px 16px #3988e3;
+    transform:translateY(-4px)
+}
+.name{
+    font-size: 24px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+.role{
+    font-size: 14px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.profile-header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.description{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+   
+}
+.tags li{
+    background-color: #363B4B;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 7px 10px;
+    list-style: none;
+    font-size: 10px;
+    color: white;
+    box-shadow:1px 1px 1px black;
+    transition: transform 0.3s ease;
+}
+.tags li:hover{
+    transform: scale(1.08);
+}
+.flip-btn,.back-flip-btn{
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 7px 0px;
+    font-size: 15px;
+
+}
+
+.back-header {
+    color: white;
+    font-size: 18px;
+    background-color: #13141c;
+    padding: 7px 0px 20px 10px;
+    border-radius: 20px 20px 0 0 ;
+}
+.back-header p{
+    font-size: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #303646;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: -1px -1px 1px black;
+    margin-top: -15px;
+    flex-grow: 1;
+}
+
+    
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.content-title{
+    font-size: 15px;
+    color: #67ade7;
+    font-weight: bold;
+}
+.content-body{
+    display: flex;
+    font-size: 10px;
+    justify-content: left;   
+    gap: 10px;     
+    font-weight:bold;
+
+}
+
+.content-body a{
+    text-decoration: none;
+
+}
+
+.topics{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 7px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.topics:hover{
+    transform: translateY(-3px);
+}
+
+.project{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 165, 241);
+    transition: transform 0.3s ease;
+}
+
+.project:hover{
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 2px rgb(59, 165, 241);
+}
+
+.social-links{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    flex-grow: 1;
+    
+}
+.social-links:hover{
+    transform: translateY(-3px);
+    
+}
