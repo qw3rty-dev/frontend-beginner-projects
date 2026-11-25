@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hacker News</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main class="container">
+            <section class="nav-bar">
+                <div class="left">
+                    <div class="logo">
+                        <span class="logo-letter">Y</span> Hacker News
+                        <!-- <span class="logo-text">Hacker News</span> -->
+                    </div>
+                    <div class="nav-links">
+                        <a href="https://news.ycombinator.com/newest" target="_blank" rel="noopener noreferrer">new</a>
+                        | <a href="https://news.ycombinator.com/front" target="_blank" rel="noopener noreferrer">past</a>
+                        | <a href="https://news.ycombinator.com/newsomments" target="_blank" rel="noopener noreferrer">comments</a>
+                        | <a href="https://news.ycombinator.com/ask" target="_blank" rel="noopener noreferrer">ask</a>
+                        | <a href="https://news.ycombinator.com/show" target="_blank" rel="noopener noreferrer">show</a>
+                        | <a href="https://news.ycombinator.com/jobs" target="_blank" rel="noopener noreferrer">jobs</a>
+                        | <a href="#" class="submit" target="_blank" rel="noopener noreferrer">submit</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#" class="login-btn" target="_blank" rel="noopener noreferrer">login</a>
+                </div>
+            </section>
+
+            <section class="stories" id="story-container"></section>
+            <button class="next-page" id="more-btn">More</button>
+            <hr class="footer-break">
+
+            <footer class="footer"> 
+                <div class="footer-links"> 
+                    <a href="https://news.ycombinator.com/newsguidelines.html" target="_blank" rel="noopener noreferrer">Guidelines</a>
+                    | <a href="https://news.ycombinator.com/newsfaq.html" target="_blank" rel="noopener noreferrer">FAQ</a>
+                    | <a href="https://news.ycombinator.com/lists" target="_blank" rel="noopener noreferrer">Lists</a>
+                    | <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener noreferrer" class="api-link">API</a>
+                    | <a href="https://news.ycombinator.com/security.html" target="_blank" rel="noopener noreferrer">Security</a>
+                    | <a href="https://www.ycombinator.com/legal/" target="_blank" rel="noopener noreferrer">Legal</a>
+                    | <a href="https://www.ycombinator.com/apply/" target="_blank" rel="noopener noreferrer">Apply to YC</a>
+                    | <a href="mailto:hn@ycombinator.com:" target="_blank" rel="noopener noreferrer">Contact</a>
+                </div>
+                <div class="search-box">
+                    Search:
+                    <input type="text">
+                </div>
+            </footer>
+            </main>
+        </body>
+    </html>

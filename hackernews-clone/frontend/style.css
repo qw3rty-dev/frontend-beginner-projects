@@ -1,0 +1,165 @@
+:root{
+    --gray-color: #828282;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+a{
+    color: var(--gray-color);
+    text-decoration: none;
+}
+
+.container{
+    margin: 8px auto;
+    max-width: 85%;
+    min-height: 20vh;
+    background-color:#f6f6ef ;
+}
+
+/* ---------------- NAV BAR -------------------- */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ff6600;
+    padding: 2px 4px;
+    font-size: 14px;
+}
+.left{
+    display: flex;
+    gap: 5px;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.logo-letter{
+    padding: 1px 3px;
+    color: white;
+    font-size: 11px;
+    font-weight: 100;
+    border: 1px solid white;
+}
+
+
+.nav-links a{
+    color: black;
+}
+
+.right a{
+    color: black;
+    margin-right: 4px;
+}
+
+/* ---------------- Stories -------------------- */
+
+.stories{
+    padding: 8px 0;
+}
+.story{
+    margin: 5px 0;
+    display: flex;
+}
+.fix-components{
+    display: flex;
+}
+.main-components{
+    display: flex;
+    flex-direction: column;
+
+}
+.top{
+    display: flex;
+    gap: 2px;
+    font-size: 14px;
+}
+.bottom{
+    display: flex;
+    gap: 2px;
+    color:var(--gray-color);
+    font-size: 10px;
+
+}
+.rank{
+    color: var(--gray-color);
+    font-size: 14px;
+}
+.upvote {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    margin: 3px 2px 6px;
+    background: url(https://news.ycombinator.com/triangle.svg), linear-gradient(transparent, transparent) no-repeat;
+    background-size: 10px;
+}
+
+.title a{
+    color: black;
+}
+
+.title a:visited{
+    color: var(--gray-color);
+}
+.domain a {
+    font-size: 10px;
+}
+
+.next-page{
+    color: var(--gray-color);
+    border: 0;
+}
+/* ---------------- Footer -------------------- */
+.footer-break{
+    /* margin: 20px 0 0 0; */
+    background-color: #ff6600;
+    height: 2.5px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+.footer-links{
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 100;
+}
+.footer-links a{
+    color: black;
+    font-size: 11px;
+}
+.footer-links a:visited{
+    color: var(--gray-color);
+}
+.footer-links .api-link{
+    color: var(--gray-color)
+}
+.search-box {
+    font-size: 14px;
+    color: var(--gray-color)
+}
+.search-box input{
+    max-width: 140px;
+}
+
+@media(max-width:768px){
+    .left{
+        flex-direction: column;
+    }
+    .top{
+        flex-direction: column;
+        gap: 1px;
+    }
+}
